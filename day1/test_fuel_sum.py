@@ -1,8 +1,8 @@
-from fuel_sum import fuel_sum
+from fuel_sum import get_answer
 
 
 def test_case0():
-    assert fuel_sum([12]) == 2
-    assert fuel_sum([14]) == 2
-    assert fuel_sum([1969]) == 654
-    assert fuel_sum([100756]) == 33583
+    assert get_answer([12]) == (2, 2)
+    assert get_answer([14]) == (2, 2)
+    assert get_answer([1969]) == (654, 966)
+    assert get_answer([100756]) == (33583, 50346)
